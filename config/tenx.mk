@@ -79,7 +79,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PIHOOKS_BUILD_FINGERPRINT="google/caiman/caiman:14/AD1A.240905.004/12196292:user/release-keys" \
     PIHOOKS_MODEL_SPOOF="Pixel 9 Pro"
 
-ifeq ($(TARGET_SUPPORTS_64_BIT_APPS), true)
     PRODUCT_PACKAGES += \
         FaceUnlock
 
@@ -88,4 +87,3 @@ ifeq ($(TARGET_SUPPORTS_64_BIT_APPS), true)
 
     PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
