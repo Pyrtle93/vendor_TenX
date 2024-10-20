@@ -7,8 +7,6 @@ $(call inherit-product, vendor/gms/products/gms.mk)
 $(call inherit-product-if-exists, vendor/overlays/Elegance/elegance.mk)
 # Themedicons
 $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
-# Extras
-$(call inherit-product, vendor/extra/product.mk)
 # Pixel Framework
 $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
 # Pixel style
